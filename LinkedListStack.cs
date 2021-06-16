@@ -35,7 +35,33 @@ namespace Stack_Queue
                 temp = temp.next;
             }
         }
-       
-        
+        internal void Peek()     //Method to return top element of stack (LiFO) without deleting it  
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine("{0} is in top of Stack", this.top.data);
+        }
+        internal void Pop()   //Method to remove the top most element and return it 
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Value popped is {0}", this.top.data);
+                this.top = this.top.next;
+            }
+        }
+        internal void IsEmpty()  //Method checking for empty spaces
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+                break;
+            }
+        }
+
+
     }
 }

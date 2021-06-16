@@ -7,7 +7,7 @@ namespace Stack_Queue
     class Node
     {
         public int data;
-        public Node next;        //Key and next which is Associated to another node key So Kind of Node Iteration..
+        public Node next;        //Key and next which stores address Associated to another node key
 
         public Node(int data)
         {

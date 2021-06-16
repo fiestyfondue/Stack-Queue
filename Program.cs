@@ -11,6 +11,9 @@ namespace Stack_Queue
             list.push(30);
             list.push(56);
             list.display();
+            list.Peek();
+            list.Pop();
+            list.IsEmpty();
            
 
 
